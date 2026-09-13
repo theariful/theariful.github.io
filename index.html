@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Ariful Haque — QA Engineer &amp; Business Automation Expert</title>
+<meta name="description" content="Md Ariful Haque — Software Quality Assurance Engineer and Business Automation Expert. GoHighLevel CRM, n8n, Make.com, Selenium, Postman, JMeter. Building automation systems that drive business growth.">
+<meta name="author" content="Md Ariful Haque">
+<meta property="og:title" content="Md Ariful Haque — QA Engineer &amp; Business Automation Expert">
+<meta property="og:description" content="Software QA Engineer and Business Automation Expert. GoHighLevel CRM, n8n, Make.com, Selenium. Automation systems that drive business growth.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b0f14'/><text y='68' x='50' text-anchor='middle' font-size='52' font-family='system-ui,sans-serif' font-weight='700' fill='%2338e0a5'>A</text></svg>">
+<style>
+  :root{
+    --bg:#0a0e13;
+    --bg-2:#0f151c;
+    --surface:#121a23;
+    --surface-2:#16202b;
+    --line:#22303e;
+    --line-soft:#1a2632;
+    --text:#e8eef5;
+    --muted:#93a4b6;
+    --dim:#6b7f92;
+    --accent:#38e0a5;
+    --accent-2:#4aa8ff;
+    --accent-glow:rgba(56,224,165,.14);
+    --radius:14px;
+    --maxw:1120px;
+    --font:'Inter',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent);color:#04120c}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:24px}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:saturate(160%) blur(14px);
+    -webkit-backdrop-filter:saturate(160%) blur(14px);
+    background:rgba(10,14,19,.72);
+    border-bottom:1px solid transparent;
+    transition:border-color .25s ease, background .25s ease;
+  }
+  header.scrolled{border-bottom-color:var(--line-soft)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em}
+  .brand .mark{
+    width:32px;height:32px;border-radius:9px;display:grid;place-items:center;
+    background:linear-gradient(140deg,var(--accent),var(--accent-2));
+    color:#04120c;font-weight:800;font-size:15px;flex:none;
+  }
+  .brand span.n{font-size:15px}
+  .navlinks{display:flex;gap:4px;align-items:center}
+  .navlinks a{
+    padding:8px 13px;border-radius:8px;font-size:14px;color:var(--muted);
+    transition:color .18s,background .18s;
+  }
+  .navlinks a:hover{color:var(--text);background:var(--surface)}
+  .nav-cta{
+    padding:9px 16px !important;border-radius:9px;font-weight:600;
+    background:var(--accent) !important;color:#04120c !important;font-size:14px;
+    transition:transform .18s, box-shadow .18s;
+  }
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 22px var(--accent-glow)}
+  .burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:40px;height:38px;cursor:pointer;padding:0;align-items:center;justify-content:center}
+  .burger span{display:block;width:17px;height:1.8px;background:var(--text);position:relative}
+  .burger span::before,.burger span::after{content:'';position:absolute;left:0;width:17px;height:1.8px;background:var(--text)}
+  .burger span::before{top:-5.5px}.burger span::after{top:5.5px}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;padding:84px 0 72px;overflow:hidden}
+  .hero::before{
+    content:'';position:absolute;inset:-30% -20% auto -20%;height:640px;pointer-events:none;
+    background:
+      radial-gradient(620px 320px at 22% 24%, rgba(56,224,165,.13), transparent 62%),
+      radial-gradient(560px 300px at 78% 8%, rgba(74,168,255,.11), transparent 64%);
+    filter:blur(6px);
+  }
+  .hero .wrap{position:relative}
+  .grid-hero{display:grid;grid-template-columns:1.35fr .9fr;gap:56px;align-items:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--accent);
+    background:rgba(56,224,165,.09);border:1px solid rgba(56,224,165,.24);
+    padding:6px 13px;border-radius:999px;margin-bottom:22px;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent-glow);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(56,224,165,.5)}70%{box-shadow:0 0 0 9px rgba(56,224,165,0)}100%{box-shadow:0 0 0 0 rgba(56,224,165,0)}}
+  h1{
+    font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.08;margin:0 0 10px;
+    letter-spacing:-.032em;font-weight:800;
+  }
+  .role{
+    font-size:clamp(1.02rem,2.2vw,1.32rem);font-weight:600;margin:0 0 20px;
+    background:linear-gradient(100deg,var(--accent),var(--accent-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    letter-spacing:-.01em;
+  }
+  .lede{color:var(--muted);font-size:clamp(.98rem,1.6vw,1.08rem);max-width:56ch;margin:0 0 30px}
+  .lede strong{color:var(--text);font-weight:600}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:11px;
+    font-weight:600;font-size:14.5px;border:1px solid transparent;cursor:pointer;
+    transition:transform .18s, box-shadow .18s, background .18s, border-color .18s;
+  }
+  .btn-primary{background:var(--accent);color:#04120c}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px var(--accent-glow)}
+  .btn-ghost{border-color:var(--line);color:var(--text);background:var(--surface)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+  .btn svg{width:16px;height:16px;flex:none}
+
+  .quickmeta{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    font-family:var(--mono);font-size:12px;color:var(--dim);
+    border:1px solid var(--line-soft);background:var(--bg-2);
+    padding:5px 11px;border-radius:7px;
+  }
+
+  /* hero card */
+  .card-terminal{
+    background:linear-gradient(180deg,var(--surface),var(--bg-2));
+    border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:0 30px 60px -30px rgba(0,0,0,.8);overflow:hidden;
+  }
+  .term-bar{display:flex;align-items:center;gap:7px;padding:12px 14px;border-bottom:1px solid var(--line-soft);background:rgba(255,255,255,.015)}
+  .term-bar i{width:10px;height:10px;border-radius:50%;display:block}
+  .term-bar .t{margin-left:8px;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+  .term-body{padding:18px 18px 20px;font-family:var(--mono);font-size:12.8px;line-height:1.95}
+  .term-body .k{color:var(--accent-2)}
+  .term-body .s{color:var(--accent)}
+  .term-body .c{color:var(--dim)}
+  .term-body .p{color:var(--muted)}
+
+  /* ---------- STATS ---------- */
+  .stats{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--line-soft);border:1px solid var(--line-soft);
+    border-radius:var(--radius);overflow:hidden;margin-top:8px;
+  }
+  .stat{background:var(--bg-2);padding:22px 20px;text-align:center}
+  .stat .num{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;color:var(--accent);line-height:1.2}
+  .stat .lbl{font-size:12.5px;color:var(--dim);margin-top:2px;letter-spacing:.01em}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:76px 0;scroll-margin-top:70px}
+  .sec-head{margin-bottom:40px;max-width:60ch}
+  .sec-tag{font-family:var(--mono);font-size:12.5px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:10px}
+  h2{font-size:clamp(1.6rem,3.4vw,2.2rem);margin:0 0 12px;letter-spacing:-.028em;font-weight:800;line-height:1.2}
+  .sec-head p{color:var(--muted);margin:0;font-size:1rem}
+  .alt{background:var(--bg-2);border-block:1px solid var(--line-soft)}
+
+  /* ---------- SERVICES ---------- */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{
+    background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
+    padding:26px 24px;transition:transform .22s, border-color .22s, box-shadow .22s;
+    position:relative;overflow:hidden;
+  }
+  .card::after{
+    content:'';position:absolute;inset:0 0 auto 0;height:1px;
+    background:linear-gradient(90deg,transparent,var(--accent),transparent);
+    opacity:0;transition:opacity .22s;
+  }
+  .card:hover{transform:translateY(-4px);border-color:var(--line);box-shadow:0 22px 44px -24px rgba(0,0,0,.85)}
+  .card:hover::after{opacity:.7}
+  .ico{
+    width:42px;height:42px;border-radius:11px;display:grid;place-items:center;margin-bottom:16px;
+    background:rgba(56,224,165,.1);border:1px solid rgba(56,224,165,.2);color:var(--accent);
+  }
+  .ico svg{width:20px;height:20px}
+  .card h3{margin:0 0 8px;font-size:1.06rem;letter-spacing:-.015em;font-weight:700}
+  .card p{margin:0 0 14px;color:var(--muted);font-size:14.4px;line-height:1.6}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-family:var(--mono);font-size:11.2px;color:var(--dim);background:var(--bg);border:1px solid var(--line-soft);padding:3px 9px;border-radius:6px}
+
+  /* ---------- TIMELINE ---------- */
+  .tl{position:relative;padding-left:30px}
+  .tl::before{content:'';position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--line)}
+  .tl-item{position:relative;padding-bottom:40px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{
+    content:'';position:absolute;left:-30px;top:7px;width:13px;height:13px;border-radius:50%;
+    background:var(--bg);border:2px solid var(--accent);box-shadow:0 0 0 4px rgba(56,224,165,.08);
+  }
+  .tl-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px}
+  .tl-item h3{margin:0;font-size:1.08rem;font-weight:700;letter-spacing:-.015em}
+  .tl-item .org{color:var(--accent);font-weight:600;font-size:14.6px;margin-bottom:12px}
+  .tl-when{font-family:var(--mono);font-size:12px;color:var(--dim);white-space:nowrap}
+  ul.bullets{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}
+  ul.bullets li{margin-bottom:7px}
+  ul.bullets li::marker{color:var(--accent)}
+  ul.bullets strong{color:var(--text);font-weight:600}
+
+  /* ---------- SKILLS ---------- */
+  .skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .skillbox{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:22px 22px 24px}
+  .skillbox h4{margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);font-weight:700;font-family:var(--mono)}
+  .pills{display:flex;flex-wrap:wrap;gap:7px}
+  .pill{
+    font-size:13.2px;padding:6px 12px;border-radius:8px;
+    background:var(--bg);border:1px solid var(--line-soft);color:var(--muted);
+    transition:color .18s,border-color .18s,background .18s;
+  }
+  .pill:hover{color:var(--accent);border-color:rgba(56,224,165,.35);background:rgba(56,224,165,.06)}
+  .pill.hot{color:var(--accent);border-color:rgba(56,224,165,.3);background:rgba(56,224,165,.07);font-weight:600}
+
+  /* ---------- CERTS ---------- */
+  .certs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .cert{
+    display:flex;align-items:flex-start;gap:11px;padding:14px 16px;
+    background:var(--surface);border:1px solid var(--line-soft);border-radius:11px;
+    font-size:14.3px;color:var(--muted);transition:border-color .2s,transform .2s;
+  }
+  .cert:hover{border-color:var(--line);transform:translateX(3px)}
+  .cert svg{width:16px;height:16px;color:var(--accent);flex:none;margin-top:3px}
+
+  /* ---------- CONTACT ---------- */
+  .contact-box{
+    background:linear-gradient(150deg,var(--surface-2),var(--bg-2));
+    border:1px solid var(--line);border-radius:20px;padding:clamp(30px,5vw,52px);text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .contact-box::before{
+    content:'';position:absolute;inset:-60% 20% auto 20%;height:340px;
+    background:radial-gradient(closest-side,rgba(56,224,165,.14),transparent);pointer-events:none;
+  }
+  .contact-box > *{position:relative}
+  .contact-box h2{margin-bottom:10px}
+  .contact-box p{color:var(--muted);max-width:52ch;margin:0 auto 28px}
+  .contact-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+  footer{border-top:1px solid var(--line-soft);padding:26px 0;background:var(--bg-2)}
+  .foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;font-size:13.4px;color:var(--dim)}
+  .foot a{color:var(--muted)}
+  .foot a:hover{color:var(--accent)}
+  .foot-social{display:flex;gap:8px}
+  .foot-social a{
+    width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+    border:1px solid var(--line-soft);background:var(--surface);transition:.18s;
+  }
+  .foot-social a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+  .foot-social svg{width:16px;height:16px}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .dot{animation:none}
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:960px){
+    .grid-hero{grid-template-columns:1fr;gap:38px}
+    .cards,.skillgrid{grid-template-columns:repeat(2,1fr)}
+    .stats{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:760px){
+    .navlinks{
+      position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;
+      background:var(--bg-2);border-bottom:1px solid var(--line);padding:12px 18px 18px;display:none;
+    }
+    .navlinks.open{display:flex}
+    .navlinks a{padding:11px 12px}
+    .nav-cta{text-align:center;margin-top:6px}
+    .burger{display:flex}
+    section{padding:56px 0}
+    .hero{padding:54px 0 46px}
+    .cards,.skillgrid,.certs{grid-template-columns:1fr}
+  }
+  @media (max-width:400px){
+    .wrap{padding-inline:16px}
+    .stats{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="mark">A</span>
+      <span class="n">Md Ariful Haque</span>
+    </a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="grid-hero">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> Available for automation &amp; QA projects</span>
+        <h1>Md Ariful Haque</h1>
+        <p class="role">Software QA Engineer &amp; Business Automation Expert</p>
+        <p class="lede">
+          I make software <strong>reliable</strong> and businesses <strong>run themselves</strong>. Two years of hands-on
+          quality engineering across web, mobile and device firmware — combined with deep expertise in
+          <strong>GoHighLevel CRM</strong>, <strong>n8n</strong> and <strong>Make.com</strong> to design automation
+          systems that cut manual work, capture every lead, and drive measurable business growth.
+        </p>
+        <div class="btns">
+          <a href="#contact" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+            Let's Work Together
+          </a>
+          <a href="#services" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>
+            What I Do
+          </a>
+        </div>
+        <div class="quickmeta">
+          <span class="chip">Dhaka, Bangladesh</span>
+          <span class="chip">Remote friendly</span>
+          <span class="chip">2+ yrs QA</span>
+          <span class="chip">1000+ bugs reported</span>
+        </div>
+      </div>
+
+      <div class="card-terminal">
+        <div class="term-bar">
+          <i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+          <span class="t">automation-stack.js</span>
+        </div>
+        <div class="term-body">
+<span class="c">// what I build for clients</span><br>
+<span class="k">const</span> <span class="s">ariful</span> = {<br>
+&nbsp;&nbsp;<span class="p">crm</span>: <span class="s">"GoHighLevel"</span>,<br>
+&nbsp;&nbsp;<span class="p">automation</span>: [<span class="s">"n8n"</span>, <span class="s">"Make.com"</span>],<br>
+&nbsp;&nbsp;<span class="p">qa</span>: [<span class="s">"Selenium"</span>, <span class="s">"Playwright"</span>, <span class="s">"Postman"</span>],<br>
+&nbsp;&nbsp;<span class="p">delivers</span>: <span class="s">"business growth"</span>,<br>
+&nbsp;&nbsp;<span class="p">manualWork</span>: <span class="k">null</span> <span class="c">// automated</span><br>
+};
+        </div>
+      </div>
+    </div>
+
+    <div class="stats rv" style="margin-top:56px">
+      <div class="stat"><div class="num">1000+</div><div class="lbl">Bugs reported &amp; verified</div></div>
+      <div class="stat"><div class="num">10,000+</div><div class="lbl">Manual test cases executed</div></div>
+      <div class="stat"><div class="num">11</div><div class="lbl">Professional certificates</div></div>
+      <div class="stat"><div class="num">2+</div><div class="lbl">Years in the industry</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Services</span>
+      <h2>Automation that pays for itself</h2>
+      <p>I design and ship the systems that handle your repetitive work — so your team spends its time on the parts of the business that actually grow revenue.</p>
+    </div>
+    <div class="cards">
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>GoHighLevel CRM Build-Out</h3>
+        <p>Full GHL setup done properly: pipelines, sub-accounts, snapshots, funnels, calendars and booking flows, plus SMS/email nurture sequences that keep leads warm without anyone touching them.</p>
+        <div class="tags"><span class="tag">Pipelines</span><span class="tag">Funnels</span><span class="tag">Snapshots</span><span class="tag">Workflows</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14"/><path d="m15 12 2 2 2-2"/></svg></div>
+        <h3>Workflow Automation — n8n &amp; Make.com</h3>
+        <p>Custom multi-step workflows that connect the tools you already pay for. CRM, sheets, email, Slack, webhooks and APIs stitched into one pipeline, with error handling and retries built in.</p>
+        <div class="tags"><span class="tag">n8n</span><span class="tag">Make.com</span><span class="tag">Webhooks</span><span class="tag">REST APIs</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-5 3.5 3.5L21 6"/></svg></div>
+        <h3>Growth &amp; Lead Systems</h3>
+        <p>Lead capture to closed deal, automated end to end: instant speed-to-lead follow-up, missed-call text-back, review requests, reactivation campaigns and reporting dashboards that show what's working.</p>
+        <div class="tags"><span class="tag">Speed to lead</span><span class="tag">Nurture</span><span class="tag">Reporting</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3v1a3 3 0 0 0 0 6v1a3 3 0 0 0 3 3 3 3 0 0 0 6 0 3 3 0 0 0 3-3v-1a3 3 0 0 0 0-6V9a3 3 0 0 0-3-3V5a3 3 0 0 0-3-3Z"/></svg></div>
+        <h3>AI Agent Integration</h3>
+        <p>AI woven into the workflow where it earns its place — conversation handling, lead qualification, content and summary generation, and document processing, wired directly into your CRM and automations.</p>
+        <div class="tags"><span class="tag">AI agents</span><span class="tag">Claude</span><span class="tag">Prompt design</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11.5 11 13.5 15.5 9"/><path d="M20.6 8.6A9 9 0 1 1 12 3"/><path d="M15 3h6v6"/></svg></div>
+        <h3>QA &amp; Test Automation</h3>
+        <p>Manual and automated testing that catches defects before your users do: functional, regression and integration coverage, API validation with Postman, and Selenium/Playwright suites you can run every release.</p>
+        <div class="tags"><span class="tag">Selenium</span><span class="tag">Playwright</span><span class="tag">Postman</span><span class="tag">JMeter</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><rect x="5" y="11" width="4" height="6" rx="1"/><rect x="10.5" y="7" width="4" height="10" rx="1"/><rect x="16" y="4" width="4" height="13" rx="1"/></svg></div>
+        <h3>Process Audit &amp; Consulting</h3>
+        <p>Before building anything, I map how your business actually runs, find the steps that eat hours, and show you exactly what to automate first for the fastest return — then build it.</p>
+        <div class="tags"><span class="tag">Process mapping</span><span class="tag">SOPs</span><span class="tag">ROI first</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Experience</span>
+      <h2>Where I've done the work</h2>
+      <p>Quality engineering in production environments, with the discipline that carries straight over into building automation people can trust.</p>
+    </div>
+
+    <div class="tl">
+      <div class="tl-item rv">
+        <div class="tl-top">
+          <h3>Software Quality Assurance Engineer</h3>
+          <span class="tl-when">01/2024 – 08/2026</span>
+        </div>
+        <div class="org">Inovace Technologies Ltd · Dhaka, Bangladesh</div>
+        <ul class="bullets">
+          <li>Designed and executed <strong>20–40 manual test cases per release cycle</strong> covering functional, regression and integration scenarios, contributing to a measurable reduction in production defects.</li>
+          <li>Performed API testing with <strong>Postman</strong> to validate endpoints, request payloads and error handling across multiple modules.</li>
+          <li>Tested mobile applications on both <strong>Android and iOS</strong>, ensuring consistent UI behaviour and feature reliability.</li>
+          <li>Automated <strong>7+ regression test scripts</strong> using Selenium WebDriver (Java), sharply reducing manual effort on repeated release cycles.</li>
+          <li>Reported and tracked <strong>1000+ bugs</strong> through the full defect lifecycle — identification to verification — with structured developer follow-up.</li>
+          <li>Analysed 10+ recurring test failures per release and updated documentation and guidelines to eliminate repeat escapes.</li>
+          <li>Established standardised QA documentation templates adopted across the team, ensuring consistency and traceability of coverage.</li>
+          <li>Collaborated with developers and product owners in <strong>Agile/Scrum</strong> sprints — sprint planning, defect triage and release sign-off.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-top">
+          <h3>Electrical Engineering Intern</h3>
+          <span class="tl-when">01/2021 – 02/2021</span>
+        </div>
+        <div class="org">Energypac Power Generation Ltd · Dhaka, Bangladesh</div>
+        <ul class="bullets">
+          <li>Operated and maintained 3+ diesel generators and ATS units, learning the procedures behind reliable performance.</li>
+          <li>Observed assembly and production processes for ATS and motor control centres (MCC).</li>
+          <li>Reviewed 5+ electrical design methods used in industrial control systems to understand factory automation best practice.</li>
+          <li>Spent three weeks on-site shadowing engineers and production staff in a live industrial environment.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="alt">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Projects</span>
+      <h2>Selected work</h2>
+      <p>Where the testing and automation work shows up in something real.</p>
+    </div>
+    <div class="cards">
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <h3>Tipsoi HRM — Web &amp; App Testing</h3>
+        <p>End-to-end QA ownership for a full HRM platform: <strong style="color:var(--text)">10,000+ manual test cases</strong> across Leave, Attendance, Manual Entry, User Management, Shift Padding, Timezone and Payroll, plus firmware and hardware testing of attendance devices for clean data sync. Built and maintained 7+ Selenium scripts for login, leave and reports.</p>
+        <div class="tags"><span class="tag">07/2024 – Present</span><span class="tag">Selenium</span><span class="tag">Firmware QA</span><span class="tag">Payroll</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+        <h3>CRM &amp; Lead-Flow Automation Systems</h3>
+        <p>GoHighLevel builds paired with n8n and Make.com scenarios: leads captured from forms and ads land in the right pipeline stage, get an instant follow-up, and move through nurture and review-request sequences without manual handling.</p>
+        <div class="tags"><span class="tag">GoHighLevel</span><span class="tag">n8n</span><span class="tag">Make.com</span></div>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 8h14"/><path d="M7 21h10"/><circle cx="12" cy="6" r="3"/></svg></div>
+        <h3>API &amp; Load Testing Suite</h3>
+        <p>Postman collections validating endpoints, payloads and error handling across modules, with JMeter load scenarios to confirm the system holds up under concurrent traffic before it reaches production.</p>
+        <div class="tags"><span class="tag">Postman</span><span class="tag">JMeter</span><span class="tag">REST</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Skills</span>
+      <h2>Tools I work in daily</h2>
+      <p>Highlighted items are where I spend most of my time right now.</p>
+    </div>
+    <div class="skillgrid">
+
+      <div class="skillbox rv">
+        <h4>Automation &amp; CRM</h4>
+        <div class="pills">
+          <span class="pill hot">GoHighLevel CRM</span>
+          <span class="pill hot">n8n</span>
+          <span class="pill hot">Make.com</span>
+          <span class="pill">Zapier-style integrations</span>
+          <span class="pill">Webhooks</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">AI Agents</span>
+          <span class="pill">Claude / Cowork</span>
+          <span class="pill">WordPress</span>
+        </div>
+      </div>
+
+      <div class="skillbox rv">
+        <h4>Testing</h4>
+        <div class="pills">
+          <span class="pill hot">Manual Testing</span>
+          <span class="pill hot">Automation Testing</span>
+          <span class="pill">API Testing</span>
+          <span class="pill">Load Testing</span>
+          <span class="pill">Security Testing</span>
+          <span class="pill">Regression</span>
+          <span class="pill">Mobile (iOS / Android)</span>
+          <span class="pill">Firmware QA</span>
+        </div>
+      </div>
+
+      <div class="skillbox rv">
+        <h4>Technical</h4>
+        <div class="pills">
+          <span class="pill">Java</span>
+          <span class="pill">Python</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill hot">Selenium</span>
+          <span class="pill">Playwright</span>
+          <span class="pill">Postman</span>
+          <span class="pill">JMeter</span>
+          <span class="pill">Git</span>
+        </div>
+      </div>
+
+      <div class="skillbox rv">
+        <h4>Project &amp; Process</h4>
+        <div class="pills">
+          <span class="pill">Agile / Scrum</span>
+          <span class="pill">ClickUp</span>
+          <span class="pill">Asana</span>
+          <span class="pill">Jira-style tracking</span>
+          <span class="pill">SOP &amp; documentation</span>
+          <span class="pill">Process mapping</span>
+        </div>
+      </div>
+
+      <div class="skillbox rv">
+        <h4>Education</h4>
+        <div class="pills" style="flex-direction:column;align-items:flex-start">
+          <span class="pill" style="width:100%">B.Sc. Electrical &amp; Electronic Engineering — East West University (2016–2021)</span>
+          <span class="pill" style="width:100%">HSC (Science) — Cumilla Victoria Govt. College (2012–2014)</span>
+          <span class="pill" style="width:100%">SSC (Science) — Comilla Modern High School (2007–2012)</span>
+        </div>
+      </div>
+
+      <div class="skillbox rv">
+        <h4>Professional Training</h4>
+        <div class="pills" style="flex-direction:column;align-items:flex-start">
+          <span class="pill" style="width:100%">Full Stack SQA &amp; Test Automation — Road to SDET (2025)</span>
+          <span class="pill" style="width:100%">Software Quality Assurance, 360 hours — QA Harbor (2025)</span>
+          <span class="pill" style="width:100%">Selenium WebDriver &amp; Java — Udemy (2024)</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="alt">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Certificates</span>
+      <h2>Professional certifications</h2>
+      <p>Eleven certifications across automation, cloud AI, product and quality engineering.</p>
+    </div>
+    <div class="certs">
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Oracle Cloud Infrastructure 2025 Certified <strong style="color:var(--text)">Generative AI Professional</strong></span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Oracle Cloud Infrastructure 2025 Certified <strong style="color:var(--text)">AI Foundations Associate</strong></span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Atlassian Agile Project Management Professional Certificate</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Aha! Product Management Professional Certificate</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Career Essentials in GitHub Professional Certificate</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>LambdaTest Software Testing Professional Certificate</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>LambdaTest Test Automation Professional Certificate</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ServiceNow IT Leadership Professional Certificate</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Certified Security Code Review Beginners (CSCRB)</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Essentials Automation Certification — 2024</span></div>
+      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Advanced Automation Certification — 2024</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box rv">
+      <span class="sec-tag">Contact</span>
+      <h2>Let's automate something</h2>
+      <p>Whether you need a CRM that actually runs your follow-up, a workflow that removes hours of manual work, or a QA process that catches issues before release — tell me what's slowing you down.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:arifulhaque386@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          arifulhaque386@gmail.com
+        </a>
+        <a class="btn btn-ghost" href="https://wa.me/8801685871794" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v2a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 3.2 2 2 0 0 1 3.1 1h2a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L6.6 8.6a16 16 0 0 0 6 6l1-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          +880 1685 871794
+        </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/theariful/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.02-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/theariful" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.45-4.04-1.45-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.25 1.85 1.25 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> Md Ariful Haque — QA Engineer &amp; Business Automation Expert</span>
+    <div class="foot-social">
+      <a href="https://github.com/theariful" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.45-4.04-1.45-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.25 1.85 1.25 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/theariful/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.5c0-1.31-.02-3-1.9-3-1.9 0-2.2 1.42-2.2 2.9V21H9z"/></svg></a>
+      <a href="mailto:arifulhaque386@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // sticky header border
+  var hdr = document.getElementById('hdr');
+  var onScroll = function(){ hdr.classList.toggle('scrolled', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile nav
+  var burger = document.getElementById('burger');
+  var links = document.getElementById('navlinks');
+  burger.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') { links.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  // reveal on scroll
+  var els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    els.forEach(function(el, i){ el.style.transitionDelay = (Math.min(i,6)*45) + 'ms'; io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+</body>
+</html>
