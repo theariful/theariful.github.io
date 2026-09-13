@@ -225,10 +225,22 @@
   .cert{
     display:flex;align-items:flex-start;gap:11px;padding:14px 16px;
     background:var(--surface);border:1px solid var(--line-soft);border-radius:11px;
-    font-size:14.3px;color:var(--muted);transition:border-color .2s,transform .2s;
+    font-size:14.3px;color:var(--muted);
+    transition:border-color .2s,transform .2s,background .2s;
   }
-  .cert:hover{border-color:var(--line);transform:translateX(3px)}
-  .cert svg{width:16px;height:16px;color:var(--accent);flex:none;margin-top:3px}
+  .cert:hover,.cert:focus-visible{border-color:rgba(56,224,165,.4);background:rgba(56,224,165,.04);transform:translateX(3px)}
+  .cert:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .cert .tick{width:16px;height:16px;color:var(--accent);flex:none;margin-top:3px}
+  .cert-name{flex:1;min-width:0}
+  .verify{
+    display:inline-flex;align-items:center;gap:4px;flex:none;align-self:center;
+    font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--dim);
+    border:1px solid var(--line-soft);border-radius:6px;padding:3px 8px;
+    transition:color .2s,border-color .2s;
+  }
+  .verify svg{width:11px;height:11px}
+  .cert:hover .verify{color:var(--accent);border-color:rgba(56,224,165,.35)}
+  a.pill:hover{color:var(--accent);border-color:rgba(56,224,165,.35);background:rgba(56,224,165,.06)}
 
   /* ---------- CONTACT ---------- */
   .contact-box{
@@ -290,7 +302,7 @@
     .stats{grid-template-columns:1fr}
   }
 </style>
-  <script>
+<script>
 // Knock Knock Widget
 window.company_id = '6a903ff67d2e0d66a30618d5';
 var newScript = document.createElement('script');
@@ -594,7 +606,7 @@ document.getElementsByTagName('HEAD')[0].appendChild(newScript);
         <div class="pills" style="flex-direction:column;align-items:flex-start">
           <span class="pill" style="width:100%">Full Stack SQA &amp; Test Automation — Road to SDET (2025)</span>
           <span class="pill" style="width:100%">Software Quality Assurance, 360 hours — QA Harbor (2025)</span>
-          <span class="pill" style="width:100%">Selenium WebDriver &amp; Java — Udemy (2024)</span>
+          <a class="pill" href="https://www.udemy.com/certificate/UC-3c5defdf-c708-4437-a0e0-125b8afbd82d/" target="_blank" rel="noopener" style="width:100%">Selenium WebDriver &amp; Java — Udemy (2024) ↗</a>
         </div>
       </div>
 
@@ -608,22 +620,22 @@ document.getElementsByTagName('HEAD')[0].appendChild(newScript);
     <div class="sec-head rv">
       <span class="sec-tag">Certificates</span>
       <h2>Professional certifications</h2>
-      <p>Eleven certifications across automation, cloud AI, product and quality engineering.</p>
+      <p>Eleven certifications across automation, cloud AI, product and quality engineering. Every one links to its official verification page — click any card to check it.</p>
     </div>
     <div class="certs">
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Oracle Cloud Infrastructure 2025 Certified <strong style="color:var(--text)">Generative AI Professional</strong></span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Oracle Cloud Infrastructure 2025 Certified <strong style="color:var(--text)">AI Foundations Associate</strong></span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Atlassian Agile Project Management Professional Certificate</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Aha! Product Management Professional Certificate</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Career Essentials in GitHub Professional Certificate</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>LambdaTest Software Testing Professional Certificate</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>LambdaTest Test Automation Professional Certificate</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ServiceNow IT Leadership Professional Certificate</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Certified Security Code Review Beginners (CSCRB)</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Essentials Automation Certification — 2024</span></div>
-      <div class="cert rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Advanced Automation Certification — 2024</span></div>
+      <a class="cert" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7846C5B29CC5D4A9D1D67B5B3D12FB076EDB2F397A8919A824E7D0C8214B199F" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Oracle Cloud Infrastructure 2025 Certified <strong>Generative AI Professional</strong></span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=938068BFB3AEC74A03E976AEC839ABA3D66EAAFB9153A1A5A385E9D2A8D64795" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Oracle Cloud Infrastructure 2025 Certified <strong>AI Foundations Associate</strong></span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/certificates/cd9c36d297dd6226dcd52f1234e20196942b3fe47087658b66555860bef811bf" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Atlassian Agile Project Management Professional Certificate</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/certificates/9be3e21e2e823382b46005080a617313f49c4858733eee240a7431458b53a815" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Aha! Product Management Professional Certificate</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/certificates/d726735c3ddecc42bc3662de2b7b1ec5d9c845d1d9e97d2922db82f8eb962d15" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Career Essentials in GitHub Professional Certificate</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/certificates/0ca102d577c72a8821512ee55714983b0386c26e48835d30801430a321abb9cd" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">LambdaTest Software Testing Professional Certificate</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/certificates/b63c7815d94502b6ac55937f43cf7868e286d83165348f153c7a914c253cd5eb" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">LambdaTest Test Automation Professional Certificate</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://www.linkedin.com/learning/certificates/357dc3069cf19c088b01a01e56957127afaa765c9e33bcb9e533f7b903c69197" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">ServiceNow IT Leadership Professional Certificate</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://courses.redteamleaders.com/exam-completion/1381b7cf97238d95" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Certified Security Code Review Beginners (CSCRB)</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://certificates.automationanywhere.com/b29f119f-8e61-47af-ad5a-da16d421af84#acc.CIGQFWuR" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Essentials Automation Certification — 2024</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="cert" href="https://certificates.automationanywhere.com/a0421abf-0cef-4c4f-8f90-3af2d01f6aeb#acc.dI35W8lb" target="_blank" rel="noopener"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span class="cert-name">Advanced Automation Certification — 2024</span><span class="verify">Verify<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
     </div>
-  </div>
+    </div>
 </section>
 
 <!-- CONTACT -->
